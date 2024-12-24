@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="9;url=./merry1/index.html">
+    <title>Merry Chistmas</title>
+    <style>
+        html,body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        #video_url{
+            width: 100%;
+            height: 100%;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+    <audio id="bgMusic" loop>
+        <source src="kkk.m4a" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playMusic() {
+            const audio = document.getElementById('bgMusic');
+            audio.play()
+                .then(() => {
+                    console.log("Nhạc đã bắt đầu phát.");
+                })
+                .catch((error) => {
+                    console.error("Không thể phát nhạc:", error);
+                    alert("Có lỗi xảy ra khi phát nhạc.");
+                });
+        }
+    </script>
+    <div id="main">
+        <video src="./assets/1.mp4" id="video_url" muted="muted" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <img id="reindeer" src="imgs/reindeer.png" alt="Reindeer" />
+</body>
+<script type="text/javascript">
+    $(function(){
+        var video = document.getElementById("video_url");
+        video.src = "" ;
+        video.play();
+    })
+</>
+</html>
