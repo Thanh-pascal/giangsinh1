@@ -87,8 +87,8 @@ document.addEventListener("click", function () {
                     $("#letter").show("drop", {direction: "down"}, "fast");
                     $(".message").typed({
                         strings: [
-                        "<<< Merry Christmas >>>",
-                        "Giáng sinh vui vẻ nha mn!!!, Chúc mọi người có một mùa noel thật ấm áp nha.",
+                        "Merry Christmas!",
+                        "More than a year has passed, wish you a happy new year, happiness and always be steadfast and successful on the path you have chosen (read code 081023 to admin to receive a gift)",
                         ],
                         typeSpeed: 250,
                         startDelay: 500,
